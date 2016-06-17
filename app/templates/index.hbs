@@ -1,0 +1,9 @@
+<h1>Ember Movies</h1>
+
+<h3>A community review site talking about the movies out now!</h3>
+
+<ul>
+  {{#each model as |movie|}}
+    <li>{{movie.title}}</li>
+  {{/each}}
+</ul>

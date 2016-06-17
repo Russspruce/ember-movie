@@ -3,3 +3,9 @@
 <h2>Released: {{movie.date}}</h2>
 <h2>Genre: {{movie.genre}}</h2>
 <h2>Rated: {{movie.rating}}</h2>
+
+{{#each movie.reviews as |review|}}
+  {{review-tile review=review}}
+{{/each}}
+
+{{new-review saveReview="saveReview" movie=movie}}

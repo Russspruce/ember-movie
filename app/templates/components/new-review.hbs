@@ -1,0 +1,25 @@
+{{#if addNewReview}}
+<h2>Reply:</h2>
+<hr>
+
+<form>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    {{input value=name id="name"}}
+  </div>
+
+  <div class="form-group">
+    <label for="comment">Comment:</label>
+    {{textarea input value=comment id="comment"}}
+  </div>
+
+  <div class="form-group">
+    <label for="score">Score:</label>
+    {{input value=score id="score"}}
+  </div>
+
+  <button {{action 'saveReview'}}>Submit</button>
+</form>
+{{else}}
+  <button {{action 'reviewForm'}}>Comment</button>
+  {{/if}}

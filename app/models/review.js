@@ -3,11 +3,10 @@ import DS from 'ember-data';
 // import { belongsTo, hasMany } from 'ember-data/relationships';
 
 export default DS.Model.extend({
-  title: DS.attr(),
-  date: DS.attr(),
-  rating: DS.attr(),
-  genre: DS.attr(),
-  reviews: DS.hasMany('review', {async: true})
+  name: DS.attr(),
+  comment: DS.attr(),
+  score: DS.attr(),
+  movie: DS.belongsTo('movie', {async: true})
 
 
 });

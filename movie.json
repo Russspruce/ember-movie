@@ -1,0 +1,18 @@
+{ "movies": [{
+    "title": "Finding Dory",
+    "date": "June 17",
+    "rating": "PG",
+    "genre": "Animated, Adventure"
+  }, {
+    "title": "Warcraft",
+    "date": "June 10",
+    "rating": "PG-13",
+    "genre": "Fantasy, Adventure"
+  }, {
+    "title": "Central Intelligence",
+    "date": "June 17",
+    "rating": "PG-13",
+    "genre": "Comedy, Crime"
+
+  }]
+}

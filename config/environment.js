@@ -2,6 +2,12 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase: {
+    apiKey: "AIzaSyBH5IgX6yKd_3Za0byujnpI5HTz0wbhtKs",
+    authDomain: "ember-movie.firebaseapp.com",
+    databaseURL: "https://ember-movie.firebaseio.com",
+    storageBucket: "",
+  },
     modulePrefix: 'ember-extended',
     environment: environment,
     baseURL: '/',

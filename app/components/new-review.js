@@ -12,9 +12,10 @@ export default Ember.Component.extend({
         var params = {
           name: this.get('name'),
           comment: this.get('comment'),
-          score: this.get('score'),
+          score: parseFloat(this.get('score')),
           movie: this.get('movie')
         };
+
 
         this.sendAction('saveReview', params);
         this.set('addNewReview', false);

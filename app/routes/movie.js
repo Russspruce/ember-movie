@@ -5,6 +5,15 @@ export default Ember.Route.extend({
     return this.store.findRecord('movie', params.movie_id);
   },
   actions: {
+    update(movie, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          movie.set(key,params[key]);
+        }
+      });
+      movie.save();
+      this.transitionTo('index');
+    },
     saveReview(params) {
       var newReview = this.store.createRecord('review', params);
       var movie = params.movie;

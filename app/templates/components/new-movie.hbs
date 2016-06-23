@@ -4,27 +4,32 @@
     <form>
       <div class="form-group">
         <label for="title">Title:</label>
-        {{input value=title id="title"}}
+        {{input value=title class="form-control" id="title"}}
       </div>
 
       <div class="form-group">
         <label for="date">Released:</label>
-        {{input value=date id="date"}}
+        {{input value=date class="form-control" id="date"}}
       </div>
 
       <div class="form-group">
         <label for="rating">Rated:</label>
-        {{input value=rating id="rating"}}
+        {{input value=rating class="form-control" id="rating"}}
       </div>
 
       <div class="form-group">
         <label for="genre">Genre:</label>
-        {{input value=genre id="genre"}}
+        {{input value=genre class="form-control" id="genre"}}
       </div>
 
-      <button type="button" {{action 'saveMovie'}}>Submit</button>
+      <div class="form-group">
+        <label for="poster">Poster:</label>
+        {{input value=poster class="form-control" id="poster"}}
+      </div>
+
+      <button type="button" class="btn" {{action 'saveMovie'}}>Submit</button>
     </form>
   </div>
   {{else}}
-    <button {{action 'movieFormShow'}}>Add Movie</button>
+    <button class="btn" {{action 'movieFormShow'}}>Add Movie</button>
   {{/if}}

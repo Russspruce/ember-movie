@@ -1,0 +1,35 @@
+{{#if updateMovieForm}}
+  <h3>Update Movie:</h3>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="title">Title:</label>
+        {{input value=title class="form-control" id="title" placeholder=movie.title}}
+      </div>
+
+      <div class="form-group">
+        <label for="date">Released:</label>
+        {{input value=date class="form-control" id="date" placeholder=movie.date}}
+      </div>
+
+      <div class="form-group">
+        <label for="rating">Rated:</label>
+        {{input value=rating class="form-control" id="rating" placeholder=movie.rating}}
+      </div>
+
+      <div class="form-group">
+        <label for="genre">Genre:</label>
+        {{input value=genre class="form-control" id="genre" placeholder=movie.genre}}
+      </div>
+
+      <div class="form-group">
+        <label for="poster">Poster:</label>
+        {{input value=poster class="form-control" id="poster" placeholder=movie.poster}}
+      </div>
+
+      <button type="button" class="btn" {{action 'updateMovie'}}>Update</button>
+    </form>
+  </div>
+  {{else}}
+    <button class="btn" {{action 'updateMovieForm'}}>Edit Movie</button>
+  {{/if}}

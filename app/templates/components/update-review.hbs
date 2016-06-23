@@ -1,0 +1,25 @@
+{{#if updateReviewForm}}
+<h2>Reply:</h2>
+<hr>
+
+<form>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    {{input value=name  class="form-control" id="name" placeholder=review.name}}
+  </div>
+
+  <div class="form-group">
+    <label for="comment">Comment:</label>
+    {{textarea input value=comment class="form-control" id="comment" placeholder=review.comment}}
+  </div>
+
+  <div class="form-group">
+    <label for="score">Score:</label>
+    {{input value=score class="form-control" id="score" placeholder=review.score}}
+  </div>
+
+  <button class="btn" {{action 'updateReview'}}>Update</button>
+</form>
+{{else}}
+  <button class="btn btn-primary" {{action 'updateReviewForm'}}>Comment</button>
+  {{/if}}

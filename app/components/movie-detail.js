@@ -12,9 +12,22 @@ export default Ember.Component.extend({
 
 
   actions: {
+    update(movie, params) {
+      this.sendAction('update', movie, params);
+    },
     saveReview(params, review) {
       // console.log(averageScore),
         this.sendAction('saveReview', params, review);
       },
+  updateReview(params, review) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          review.set(key,params[key]);
+        }
+      });
+      review.save();
+      this.transitionTo('movie');
+    }
   }
+
 });

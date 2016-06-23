@@ -1,6 +1,6 @@
 # Ember-extended
 
-A review app made with Ember that is made for demonstrating skills with helpers and computed properties to show the calculated scores of ---.
+A review app made with Ember that is made for demonstrating skills with helpers and computed properties to the reviews of the movies.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <https://github.com/Russspruce/ember-movie.git>` this repository
 * change into the new directory
 * `npm install`
 * `bower install`

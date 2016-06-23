@@ -2,17 +2,19 @@
     "title": "Finding Dory",
     "date": "June 17",
     "rating": "PG",
-    "genre": "Animated, Adventure"
+    "genre": "Animated, Adventure",
+    "poster": "http://66.media.tumblr.com/0133a2429310924e732ebac7ae421b94/tumblr_o50nzg5JYH1s68u0xo6_1280.jpg"
   }, {
     "title": "Warcraft",
     "date": "June 10",
     "rating": "PG-13",
-    "genre": "Fantasy, Adventure"
+    "genre": "Fantasy, Adventure",
+    "poster":"https://upload.wikimedia.org/wikipedia/en/5/56/Warcraft_Teaser_Poster.jpg"
   }, {
     "title": "Central Intelligence",
     "date": "June 17",
     "rating": "PG-13",
-    "genre": "Comedy, Crime"
-
+    "genre": "Comedy, Crime",
+    "poster":"https://i.jeded.com/i/central-intelligence.41736.jpg"
   }]
 }

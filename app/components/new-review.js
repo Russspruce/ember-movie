@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         var params = {
           name: this.get('name'),
           comment: this.get('comment'),
-          score: parseFloat(this.get('score')),
+          score: parseInt(this.get('score')),
           movie: this.get('movie')
         };
 

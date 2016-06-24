@@ -2,13 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return Ember.RSVP.hash({
-      movies: this.store.findAll('movie'),
-      reviews: this.store.findAll('review')
-    });
+    return this.store.findAll('movie');
   },
   actions: {
     saveMovie(params) {
+      console.log(params);
       var newMovie = this.store.createRecord('movie', params);
       newMovie.save();
       this.transitionTo('index');

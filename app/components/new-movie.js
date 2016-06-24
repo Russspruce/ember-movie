@@ -12,8 +12,10 @@ export default Ember.Component.extend({
         title: this.get('title'),
         date: this.get('date'),
         rating: this.get('rating'),
-        genre: this.get('genre')
+        genre: this.get('genre'),
+        poster: this.get('poster')
       };
+      console.log(params);
       this.set('addNewMovie', false);
       this.sendAction('saveMovie', params);
     }

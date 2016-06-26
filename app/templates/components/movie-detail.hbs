@@ -8,7 +8,7 @@
     <h2>Genre: {{movie.genre}}</h2>
     <h2>Rated: {{movie.rating}}</h2>
   </div>
-  <!-- <h3>Average:{{averageScore}}</h3> -->
+  <h3>Average: {{averageScore}}</h3>
   <div class="col-md-6">
     {{#each movie.reviews as |review|}}
     {{review-tile review=review updateReview="updateReview"}}

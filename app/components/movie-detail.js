@@ -2,12 +2,17 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
-  // var averageScore;
-//   scores:       Ember.computed.mapBy('review', 'score'),
-//   sumOfScores:  Ember.computed.sum('scores'),
-//   averageScore: Ember.computed('sumOfScores', 'scores.length', function() {
-//   return this.get(('sumOfScores') / this.get('scores.length'));
-// }),
+  averageScore: Ember.computed('movie', function() {
+    var total = 0;
+    var reviewTotal = 0;
+
+    this.get('movie.reviews').forEach(function(review) {
+      reviewTotal += 1;
+      total += review.get('score');
+    });
+
+  return (total/reviewTotal).toFixed(1);
+}),
 
 
 

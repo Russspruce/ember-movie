@@ -9,6 +9,10 @@
     <h2>Rated: {{movie.rating}}</h2>
   </div>
   <h3>Average: {{averageScore}}</h3>
+  <hr>
+  <button {{action 'addToQueue' movie}} class="btn">Queue</button>
+
+
   <div class="col-md-6">
     {{#each movie.reviews as |review|}}
     {{review-tile review=review updateReview="updateReview"}}

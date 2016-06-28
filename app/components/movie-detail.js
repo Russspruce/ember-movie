@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+    queueList: Ember.inject.service(),
 
   averageScore: Ember.computed('movie', function() {
     var total = 0;
@@ -32,7 +33,13 @@ export default Ember.Component.extend({
       });
       review.save();
       this.transitionTo('movie');
-    }
+    },
+
+    addToQueue(movie) {
+
+     this.get('queueList').add(movie);
+     console.log(movie);
+   }
   }
 
 });

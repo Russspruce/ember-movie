@@ -5,5 +5,6 @@ export default Ember.Service.extend({
 
   add(movie) {
     this.get('movies').pushObject(movie);
+    console.log(movie);
   }
 });

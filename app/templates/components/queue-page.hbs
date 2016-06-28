@@ -1,14 +1,11 @@
 {{#if queueList.movies}}
-  <h2 class="favorite-title">Movie Queue</h2>
+  <h2>Movie Queue</h2>
   {{#each queueList.movies as |movie|}}
   <div class="row">
     <div class="col-md-6">
-      <img class="detail-image" src={{movie.poster}}>
-    </div>
 
-    <div class="col-md-4 col-md-offset-2">
       <h2>{{movie.title}}</h2>
-      <h2>{{movie.rating}}</h2>
+      <!-- <h2>{{movie.rating}}</h2> -->
     </div>
   </div>
   {{/each}}

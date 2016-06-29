@@ -38,7 +38,7 @@ export default Ember.Component.extend({
     addToQueue(movie) {
 
      this.get('queueList').add(movie);
-     console.log(movie);
+     alert("This movie has been added to the Queue.");
    }
   }
 
